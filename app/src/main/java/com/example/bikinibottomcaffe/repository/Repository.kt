@@ -12,7 +12,7 @@ interface Repository {
     fun getAllOrders(): SharedFlow<List<Order>>
 }
 
-internal class RepositoryImpl(): Repository{
+internal class RepositoryImpl : Repository{
 
     private val flowScope = CoroutineScope(Dispatchers.Default)
 
